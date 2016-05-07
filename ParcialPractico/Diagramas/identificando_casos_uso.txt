@@ -1,0 +1,37 @@
+CASOS DE USO : Infinity Player.
+
+Usuario:
+		1	Registrarse					
+		2	Iniciar sesion					
+		3	Cerrar sesion					
+		4	Desactivar cuenta				
+		5	Activar cuenta				
+		6	Buscar
+			-buscar usuario
+			-buscar cancion
+			-buscar artista
+			-buscar playlist	
+		7	Reproduce canciones				
+		8	Reproduce album					
+		9	Reproduce artista				
+		10	Califica canciones				
+		11	Crea playlist			
+		12	Eliminar playlist			
+		13	Reproduce playlist			
+		15	Seguir a usuarios						
+		16	Dejar de seguir usuarios				
+
+Administador
+		1	Iniciar Sesion				
+		2	Cerrar sesion					
+		3	Desactivar cuenta				
+		4	Activar cuenta					
+		5	Agregar canciones				
+		6	Bloquear canciones				
+		7	Desbloquear canciones				
+		8	Agregar albumes					
+		9	Bloquear albumes				
+		10	Desbloquear albumes				
+		11	Agregar artistas				
+		12	Bloquear artistas				
+		13	Desbloquear artistas				
