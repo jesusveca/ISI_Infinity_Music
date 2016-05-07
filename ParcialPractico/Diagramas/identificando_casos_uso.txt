@@ -18,8 +18,8 @@ Usuario:
 		11	Crea playlist			
 		12	Eliminar playlist			
 		13	Reproduce playlist			
-		15	Seguir a usuarios						
-		16	Dejar de seguir usuarios				
+		14	Seguir a usuarios						
+		15	Dejar de seguir usuarios				
 
 Administador
 		1	Iniciar Sesion				
