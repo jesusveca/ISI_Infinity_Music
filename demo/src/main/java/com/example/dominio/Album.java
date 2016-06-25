@@ -1,78 +1,115 @@
 package com.example.dominio;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-
-import javax.persistence.SequenceGenerator;
+import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 
 @Entity
 public class Album {
-	@Id
-	@SequenceGenerator(name = "Album_ID_GENERATOR", sequenceName = "Album_ID_SEQ")
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Album_ID_GENERATOR")
-	
-//	@ManyToOne
-//	@JoinColumn(name="ID_artista")
-	public String Artistas; // public Artista Artistas;
-	public Integer ID_album;
-	private Date Fecha;
-	public String Nombre;
+    @Id
+    @SequenceGenerator(name="Album_ID_GENERATOR", sequenceName="Album_ID_SEQ")
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="Album_ID_GENERATOR")
+    private Integer id_album;
+    private String nombre;
+    
+    private Date fecha;
+    private Boolean activo;
 
-	private Boolean Activo;
-	
 
-	public Album(){}
+    @OneToMany(mappedBy = "album")
+    private List<Cancion> canciones;
+    
+    @ManyToOne
+    @JoinColumn(name="id_artista")
+//    private List<Artista> artistas;
+    private Artista artista;
+    
+    
+	public List<Cancion> getCancionesAlbum(){
+		return this.canciones;
+	}
+    
+    
 	
-    public Album (Date fecha, String nombre, String artista, Boolean Activo){
-        this.Nombre = nombre;
-        this.Artistas = artista;
-        this.Fecha = fecha;
-        this.Activo=Activo;
-    }
-	
-	
+	public boolean buscarCancionAlbum(Cancion cancion){
+		for(int i = 0; i < canciones.size(); i++){
+			if(canciones.get(i) == cancion){
+				return true;
+			}
+		}
+		return false;
+	}
+    
+    
     
     public Integer getId_album() {
-        return ID_album;
+        return id_album;
     }
 
-    public void setNombre(String nombre){
-        this.Nombre = nombre;
+    public void setTitulo(String nombre){
+        this.nombre = nombre;
     }
 
-    public String getNombre(){
-        return this.Nombre;
+    public String getTitulo(){
+        return this.nombre;
     }
 
-    public void setArtista(String artistas) {
-        this.Artistas = artistas;
-    }
-
-    public String getArtistas() {
-        return Artistas;
-    }
-
-    public void setFecha(Date fecha){
-        this.Fecha = fecha;
-    }
-
-    public Date getFecha(){
-        return this.Fecha;
-    }
     
     public void setActivo(Boolean activo){
-        this.Activo = activo;
+        this.activo = activo;
     }
 
     public Boolean getActivo(){
-        return this.Activo;
+        return this.activo;
+    }
+    
+    public void setArtista(Artista artista) {
+        this.artista = artista;
+    }
+
+    public Artista getArtista() {
+        return artista;
+    }
+
+
+    public void setFecha(Date fecha){
+        this.fecha = fecha;
+    }
+
+    public Date getFecha(){
+        return this.fecha;
+    }
+
+    
+    public Album (){}
+
+    public Album (String nombre, Artista artista, Date fecha,Boolean activo){
+        this.nombre = nombre;
+        this.artista = artista;
+        this.fecha = fecha;
+        this.activo=activo;
     }
     
     
+	public void agregarCancion(Cancion cancion){
+		canciones.add(cancion);
+		return;
+	}
+    
+	
+	public void BorrarCancion(Cancion cancion){
+		canciones.remove(cancion);
+		return;
+	}
+    
+	
+	
+	public boolean buscarCancion(Cancion cancion){
+		for(int i = 0; i < canciones.size(); i++){
+			if(canciones.get(i) == cancion){
+				return true;
+			}
+		}
+		return false;
+	}
 }

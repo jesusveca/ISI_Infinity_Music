@@ -25,4 +25,7 @@ public class Alumno {
 		this.apellidoPaterno = apellidoPaterno;
 		this.promedio = promedio;
 	}
+	
+	
+	
 }
