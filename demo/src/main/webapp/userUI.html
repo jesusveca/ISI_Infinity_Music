@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es" slick-uniqueid="3" class="lang-es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Infinity Music Player</title>
+		<link rel="shortcut icon"  href="imagenes/icon.ico"/>
+		<link rel="stylesheet" href="userUI.css" media="all">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="function.js"></script>  
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="speakker/css/speakker.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="speakker/css/mspeakker.css" type="text/css" media="screen">
+		<script type="text/javascript" src="speakker/projekktor.min.js"></script> 
+		<script type="text/javascript" src="speakker/speakker.min.js"></script> 
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$().speakker({
+					file: 'http://www.speakker.com/opentape/code/projekktor.php',
+					playlist: true,
+					theme: 'light',
+					admin: 'http://www.speakker.com/opentape/code/login.php',
+					lastfm: 'http://www.lastfm.de/music/paniq'
+				});
+			});
+		</script>
+
+
+	</head>
+	<body class="m-PE login" > 
+		<div id="login-screen" class="main-login-class">
+			<div id="bg-wrap" class="loaded">
+			  	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+					
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2">
+				<div class="list-group">
+				    <a href="#" class="list-group-item disabled" color =>Main </a>
+					<div class="list-group">
+					    <a href="#" class="list-group-item ">Actualizar perfil</a>
+					    <a href="#" class="list-group-item ">Crear playlist </a>
+					    <a href="#" class="list-group-item ">Eliminar playlist</a>
+					    
+					</div>
+				    <a href="#" class="list-group-item disabled">Tu musica </a>
+					<div class="list-group">
+						<a href="#" class="list-group-item ">Canciones </a>
+					    <a href="#" class="list-group-item ">Artistas </a>
+					    <a href="#" class="list-group-item ">Albumnes </a>
+				  	</div>
+				    <a href="#" class="list-group-item disabled">Playlists</a>
+					<div class="list-group">
+					    <a href="#" class="list-group-item ">First Playlists</a>
+					    <a href="#" class="list-group-item ">Second Playlists</a>
+					   	<a href="#" class="list-group-item ">Third Playlists</a>
+				  	</div>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="row">
+							<div class="col-md-12">
+								
+							
+								<table class="table">
+								    <thead>
+								      <tr>
+								      	<th>Play</th>
+								        <th>Cancion</th>
+								        <th>Artista</th>
+								        <th>Album</th>
+								        <th>Agregar</th>
+								      </tr>
+								    </thead>
+								    <tbody>
+								      <tr>
+								        <td>
+								        	<ul id="playlist">
+												<li><a href="../persiana.mp3"><img src="imagenes/play.png" alt="play" ismap width="20px"> </a></li>
+										    </ul>
+								        </td>
+								        <td>perisan</td>
+								        <td>Soda S</td>
+								        <td>Doe</td>
+								        <td>
+								        	<img src="add.png" alt="play" ismap width="20px"> </a>
+								        </td>
+								      </tr>
+								      <tr>
+								        <td>
+								        	<ul id="playlist">
+												<li><a href="../red.mp3"><img src="imagenes/play.png" alt="play" ismap width="20px"> </a></li>
+										    </ul>
+								        </td>
+								        <td>red light</td>
+								        <td>mtiesto.com</td>
+								        <td>Doe</td>
+								        <td><img src="add.png" alt="play" ismap width="20px"> </a></td>
+								      </tr>
+								      <tr>
+								        <td>
+								        	<ul id="playlist">
+												<li><a href="../../indiana.mp3"><img src="imagenes/play.png" alt="play" ismap width="20px"> </a></li>
+										    </ul>
+								        </td>
+								        <td>indiana</td>
+								        <td>hombreg</td>
+								        <td>Doe</td>
+								        <td><img src="add.png" alt="play" ismap width="20px"> </a></td>
+								      </tr>
+								  	  <tr>
+								        <td>
+								        	<ul id="playlist">
+												<li><a href="../../martha.mp3"><img src="imagenes/play.png" alt="play" ismap width="20px"> </a></li>
+										    </ul>
+								        </td>
+								        <td>martha</td>
+								        <td>hombresg</td>
+								        <td>Doe</td>
+								        <td><img src="add.png" alt="play" ismap width="20px"> </a></td>
+								      </tr>
+								       <tr>
+								        <td>
+								        	<ul id="playlist">
+												<li><a href="../sirena.mp3"><img src="imagenes/play.png" alt="play" ismap width="20px"> </a></li>
+										    </ul>
+								        </td>
+								        <td>sirena varada</td>
+								        <td>heroes</td>
+								        <td>Doe</td>
+								        <td><img src="add.png" alt="play" ismap width="20px"> </a></td>
+								      </tr>
+									  <tr>
+								        <td>
+								        	<ul id="playlist">
+												<li><a href="../mar.mp3"><img src="imagenes/play.png" alt="play" ismap width="20px"> </a></li>
+										    </ul>
+								        </td>
+								        <td>Dooley</td>
+								        <td>mardecop</td>
+								        <td>Doe</td>
+								        <td><img src="add.png" alt="play" ismap width="20px"> </a></td>
+								      </tr>
+								    </tbody>
+								  </table>
+
+
+
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<audio src="" controls id="audioPlayer" audio::-webkit-media-controls-toggle-closed-captions-button>
+						        	Sorry, your browser doesn't support html5!
+						    	</audio>
+								<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+							    <script src="audioPlayer.js"></script>
+							    <script>
+							        // loads the audio player
+							        audioPlayer();
+							    </script>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="row">
+
+							<div class="col-md-12">
+									<a>TOP </a>
+									<table class="table">
+									    <thead>
+									      <tr>
+									        <th>#</th>
+									        <th>Cancion</th>
+									        <th>Artista</th>
+									        <th>Play</th>
+									      </tr>
+									    </thead>
+									    <tbody>
+									      <tr>
+									        <td>1</td>
+									        <td>Doe</td>
+									        <td>j</td>
+									        <td>j</td>
+									      </tr>
+									      <tr>
+									        <td>2</td>
+									        <td>jajaja</td>
+									        <td>mary</td>
+									        <td>joaasa</td>
+									      </tr>
+									      <tr>
+									        <td>3</td>
+									        <td>Dooley</td>
+									        <td>julyasasm</td>
+									        <td>jom</td>
+									      </tr>
+									    </tbody>
+									  </table>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+	</body>
+</html>
