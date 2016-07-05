@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" slick-uniqueid="3" class="lang-es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Infinity Music Player</title>
+		<link rel="shortcut icon"  href="imagenes/icon.ico"/>
+		<!-- <link rel="stylesheet" href="main.css" media="all">-->
+		<link rel="stylesheet" href="/resources/css/main.css">
+		{% block extra_css %}{% endblock %}
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="function.js"></script>  
+        {% block extra_js %}{% endblock %}
+	</head>
+	<body class="m-PE login"> 
+		<div id="login-screen" class="main-login-class">
+			<div id="bg-wrap" class="loaded">
+			  	<div id="login">
+			    	<div id="login-method">
+			      		<div class="step show" id="screen-login-infinity">
+			        		<div class="step-outer">
+			          			<div class="step-inner">
+			            			<div class="heading logo">
+				  						<img class="logo-small" alt="" src="resources/img/logo.png">
+				  						<h3>Crea tu cuenta Infinity gratis:</h3>
+									</div>
+				    				<div>
+				    					<div>
+				    						<form method="POST" action="usuario">
+				    							
+				    							<p id="wrap-username">
+							            			<label for="username">ID</label>
+							            			<input id="username" name="username" type="hidden" value="{{usuario.id_usuario}}" /> {{usuario.id_usuario}} 
+							            		</p>
+				
+							            		<p id="wrap-username">
+							            			<label for="username">activo</label>
+							            			<input id="username" name="username" type="hidden" value="{{usuario.activo}}" /> {{usuario.activo}} 
+							            		</p>
+				
+				    							<!--<td><input type="hidden" name="id" value="{{person.id}}" />{{person.id}}</td>-->
+				    							<p id="wrap-username">
+							            			<label for="username">Nombre de usuario</label>
+							            			<input id="username" name="username" type="text" value="{{usuario.username}}" />
+							            		</p>
+							            		
+							            		<p id="wrap-password">
+							           				<label for="password">Contraseña:</label>
+							           				<input id="password" name="password" type="password"  value="{{usuario.password}}" />
+							           			</p>
+				
+							            		<p id="wrap-email">
+							            			<label for="email">Dirección de correo electrónico:</label>
+							            			<input id="email" name="email" type="text" value="{{usuario.email}}" />
+							            		</p>
+												
+				
+												<p id="wrap-username">
+							            			<label for="username">Fecha(hoy)</label>
+							            			<input id="username" name="fecha_creacion" type="text" value="{{usuario.fecha_creacion}}" />
+							            		</p>			            		
+							            		
+							            		<p id="wrap-username">
+							            			<label for="username">Nombre</label>
+							            			<input id="username" name="nombre_completo" type="text" value="{{usuario.nombre_completo}}" />
+							            		</p>
+				
+							            		<p id="wrap-username">
+							            			<label for="username">Fecha de nacimiento</label>
+							            			<input id="username" name="fecha_nacimiento" type="text" value="{{usuario.fecha_nacimiento}}" />
+							            		</p>
+							            			
+				
+							           			<!-- <p class="submit-wrap">
+							           				<button class="" type="submit">Registrarte</button>
+							           			</p>-->
+							           			
+							           			<p class="submit-wrap">
+							           				<input type="submit" value="Resgistrarse" style="color:black"/>
+							           			</p>
+							           			
+								            </form>
+								        </div>
+								    </div>
+			            			
+			            			
+			            			
+			          			</div>
+			        		</div>
+			      		</div>
+				      	<div id="login-features">
+					        <h1>Consigue la música perfecta ya mismo</h1>
+							<h2>Escucha millones de canciones.</h2>
+							<ul>
+								<li>Busca y descubre música que te encantará</li>
+							  	<li>Crea playlists con tu música favorita</li>
+							  	<li>Infinity Music - Descubre la musica que estan escuchando tus amigos</li>
+							</ul>
+				      	</div>
+			    	</div>
+			  	</div>
+			</div>
+		</div>
+	</body>
+</html>
