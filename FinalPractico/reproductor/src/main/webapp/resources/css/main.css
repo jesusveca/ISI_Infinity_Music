@@ -3,8 +3,6 @@ html, body {
    height: 100%;
    font-family:verdana,arial,sans-serif;
    color:#555555;
-  position: relative;
-   overflow:hidden;
 }
 
 .nav {
@@ -14,9 +12,6 @@ html, body {
 .nav img{
 	width:20px;
 }
-
-
-
 
 a {
   color:#222222;
@@ -49,12 +44,9 @@ hr {
     clear: both;
 }
 
-#id{
-    overflow: scroll;
-}
-
 .column {
     height: 100%;
+    overflow: auto;
     *zoom:1;
 }
 
@@ -116,20 +108,12 @@ hr {
 }
 
 #main {
-	background: #ffffff url('/resources/img/fondo.jpg') no-repeat bottom left;
-	background-size: 100% 100%;
+background: #000000 url('/resources/img/bg.jpg') no-repeat bottom left;
+    background-size: 100% 100%;
     padding-left:0;
-   	padding-right:0;
-   	overflow: hidden;
+   padding-right:0;
+   overflow: hidden;
 }
-
-#main:before{
-	background-color:rgba(0,0,0,0.5);
-	bottom:0;content:"";
-	display:block;left:0;
-	position:absolute;right:0;top:0
-}
-
 #main .img-circle {
    margin-top:18px;
    height:70px;
@@ -148,7 +132,7 @@ hr {
     padding-left:5px;
 }
 #sidebar .nav li>a:hover {
-    background-color:#8C8B8B;
+    background-color:#393939;
 }
 
 .logo {
@@ -285,10 +269,10 @@ small.text-muted {
   	color:black;
   	text-align: center;
   	background-color: #fff; /* fallback */
-  	background-color: rgba(255, 255, 255, 0.4);
- 	border-color: #fff; /* fallback */
- 	border-color: rgba(255, 255, 255, 0.4);
-  	transition: background-color 0.3s ease-in,
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in,
               border-color 0.3s ease-in;
 }
 
@@ -315,7 +299,7 @@ small.text-muted {
 .ghost-button-semi-transparent:hover,
 .ghost-button-semi-transparent:active {
   background-color: #fff; /* fallback */
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(255, 255, 255, 0.4);
   border-color: #fff; /* fallback */
   border-color: rgba(255, 255, 255, 0.4);
   transition: background-color 0.3s ease-in,
@@ -326,12 +310,6 @@ small.text-muted {
 }
 
 /* adjust the contents on smaller devices */
-
-
-body {
-  position: relative;
-}
-
 @media (max-width: 768px) {
 
   .column .padding {

@@ -12,6 +12,6 @@ public class ReproController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	String home(ModelMap model) {
-		return "base";
+		return "index";
 	}
 }

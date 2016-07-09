@@ -11,16 +11,9 @@
   border-color: rgba(0,0,0,0.6);
 }
 
-
-
 .panel-body{
-	background-color: #3e444c;	
+	background-color: #222326;	
 }
-
-.panel-body:before{
-	background-color:rgba(0,0,0,0.4)
-}
-
 .panel span{
 	color: #d2d2d2;
 	font-size: 12pt;
@@ -39,7 +32,7 @@
 	  border: 1px solid transparent;
 }
 .panel .panel-body:hover {     
-	  background-color: #000000!important;	  
+	  background-color: #DF8505  !important;	  
 }
 a .panel{
 	text-decoration:none;
