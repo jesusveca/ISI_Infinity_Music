@@ -99,7 +99,7 @@ hr {
    color:#efefef;
 }
 
-.navbar-blue .dropdown-menu li a {color:black;}
+.navbar-blue .dropdown-menu li a {color:green;}
 .navbar-blue .dropdown-menu li > a {padding-left:30px;}
 
 .navbar-blue li>a:hover, .navbar-blue li>a:focus, .navbar-blue .open, .navbar-blue .open>a, .navbar-blue .open>a:hover, .navbar-blue .open>a:focus {
@@ -108,7 +108,7 @@ hr {
 }
 
 #main {
-background: #000000 url('/resources/img/bg.jpg') no-repeat bottom left;
+background: #000000 url('/resources/img/fondo.jpg') no-repeat bottom left;
     background-size: 100% 100%;
     padding-left:0;
    padding-right:0;
@@ -137,20 +137,20 @@ background: #000000 url('/resources/img/bg.jpg') no-repeat bottom left;
 
 .logo {
   display:block;
-  padding:3px;
+  padding:2px;
   background-color:#fff;
   color:#3B5999;
-  height:28px;
-  width:28px;
+  height:30px;
+  width:75px;
   margin:9px;
   margin-right:2px;
-  margin-left:15px;
+  margin-left:10px;
   font-size:20px;
   font-weight:700;
-  text-align:center;
+  text-align:left;
   text-decoration:none;
   text-shadow:0 0 1px;
-  border-radius:2px;
+  border-radius:4px;
 }
 #sidebar-footer {
   background-color:#222326;
