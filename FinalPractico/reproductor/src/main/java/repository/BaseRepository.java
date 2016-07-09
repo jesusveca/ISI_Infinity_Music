@@ -2,7 +2,7 @@ package repository;
 
 import java.util.Collection;
 
-
+import domain.Album;
 import domain.BaseEntity;
 import domain.Person;
 

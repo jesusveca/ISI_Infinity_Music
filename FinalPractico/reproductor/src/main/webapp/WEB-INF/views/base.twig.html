@@ -1,0 +1,64 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="/resources/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/resources/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/resources/css/main.css">	
+	
+	{% block extra_css %}{% endblock %}
+	<script src="/resources/js/jquery.min.js"></script>
+	<script src="/resources/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	{% block extra_js %}{% endblock %}
+	</head>
+  
+ <!--<body>-->
+ <body data-spy="scroll" data-target="#oli"> 
+  	<div class="wrapper">
+    	<div class="box">
+        	<div class="row row-offcanvas row-offcanvas-left">
+	            <!-- sidebar -->
+	            <div class="column col-sm-2 col-xs-1 " id="sidebar">
+	                <ul class="nav hidden-xs" id="lg-menu">
+	                    <li><a href="/songs/">
+	                    	<img src="/resources/img/songs.png"> Canciones
+	                    </a></li>
+	                    <li><a href="/albums/">
+	                    	<img src="/resources/img/albums.png">Albums
+	                    </a></li>
+	                    <li><a href="/artists/">
+	                    	<img src="/resources/img/artists.png"> Artistas
+	                    </a></li>
+	                    <li><a href="/artists/">
+	                    	<img src="/resources/img/user.png"> Usuarios
+	                    </a></li>
+	                    <li><a href="/artists/">
+	                    	<img src="/resources/img/est.png"> Estadisticas
+	                    </a></li>
+	                    <li><a href="/artists/">
+	                    	<img src="/resources/img/top.png"> Top 10
+	                    </a></li>
+	                     <li><a href="/artists/">
+	                    	<img src="/resources/img/neg.png"> Ingresos & más
+	                    </a></li>
+	                </ul>
+	                <ul class="list-unstyled hidden-xs" id="sidebar-footer">    
+	            	</ul>
+	            </div>
+	            <!-- /sidebar -->
+          
+            	<!-- main right col -->
+				<div class="column col-sm-10 col-xs-11" id="main" >
+				    <div class="padding" >
+				        <div class="column full col-sm-full">                    
+				            <!-- content -->                      
+				          	<div  id="oli">
+				          		{% block content %}
+				           		{% endblock %}				              
+				        	</div><!--/row-->
+				    	</div><!-- /col-9 -->
+				    </div><!-- /padding -->
+				</div>
+            <!-- /main -->
+        	</div>
+    	</div>
+	</div>
+</body>
